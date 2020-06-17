@@ -9,6 +9,8 @@ namespace ContaBill.Data
     {
     }
 
-    public DbSet<Movement> movements { get; set; }
+    public DbSet<Movement> Movements { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Type> Types { get; set; }
   }
 }
