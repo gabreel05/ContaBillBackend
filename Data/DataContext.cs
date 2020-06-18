@@ -9,13 +9,6 @@ namespace ContaBill.Data
     {
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-      builder.Entity<Category>().HasData(
-        new Category { Title = "Entrada" },
-        new Category { Title = "Saída" }
-      );
-    }
 
     public DbSet<Movement> Movements { get; set; }
     public DbSet<Category> Categories { get; set; }
